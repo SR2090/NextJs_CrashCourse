@@ -1,5 +1,6 @@
-export default function Home() {
+const Home = (): React.JSX.Element => {
   return (
-    <>Home Page</>
+    <div className="heading">Home Page</div>
   );
 }
+export default Home;
