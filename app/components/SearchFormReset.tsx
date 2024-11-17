@@ -2,6 +2,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link'
+import { X } from "lucide-react"
 const SearchFormReset = (): React.JSX.Element => {
     const reset = () => {
         const formCollection = document?.getElementsByClassName('search-form') as HTMLCollection;
@@ -13,7 +14,7 @@ const SearchFormReset = (): React.JSX.Element => {
     return (
         // Using link here to reset the url
         <>{(<button type="reset" onClick={reset}>
-            <Link href="/" className="search-btn text-white" >X</Link>
+            <Link href="/" className="search-btn text-white" ><X className='size-5' /></Link>
         </button>)}</>
     )
 }
