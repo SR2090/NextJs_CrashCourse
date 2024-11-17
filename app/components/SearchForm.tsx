@@ -1,9 +1,7 @@
 import Form from "next/form"
 import React from 'react'
 import SearchFormReset from './SearchFormReset'
-const SearchForm = (): React.JSX.Element => {
-    const query = "Test"
-
+const SearchForm = ({ query }: { query: string }): React.JSX.Element => {
     return (
         <Form action="/" scroll={false} className='search-form'>
             <input name="query" defaultValue={query} className='search-input' placeholder='Search Startups' />
