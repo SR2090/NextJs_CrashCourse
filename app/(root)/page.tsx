@@ -1,6 +1,6 @@
 import SearchForm from "../components/SearchForm";
 
-const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }> }): React.JSX.Element => {
+const Home = async ({ searchParams }: { searchParams: Promise<{ query: string }> }) => {
   const { query } = await searchParams;
   return (
     <><section className="pink_container">
